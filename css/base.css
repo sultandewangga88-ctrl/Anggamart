@@ -1,0 +1,62 @@
+/* Warna, reset, dan gaya dasar */
+
+:root {
+  --navy: #0b2a6f;
+  --blue: #1457d4;
+  --yellow: #ffc933;
+  --red: #e4262c;
+  --bg: #f4f6fb;
+  --ink: #14213d;
+  --mute: #6b7690;
+  --line: #dde3f0;
+  --ok: #16803c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 0;
+  background: none;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+
+.row.g {
+  color: var(--ok);
+}
+
+.row.tot {
+  font-weight: 800;
+  font-size: 1.1rem;
+  border-top: 1px dashed var(--line);
+  margin-top: 6px;
+  padding-top: 8px;
+}

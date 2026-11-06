@@ -1,0 +1,94 @@
+/* Modal dan formulir */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: #0b1b4a99;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+.modal[hidden] {
+  display: none;
+}
+
+.box {
+  position: relative;
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px;
+  width: min(480px, 100%);
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.box h2 {
+  margin-bottom: 12px;
+  padding-right: 30px;
+}
+
+.x {
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  font-size: 1.1rem;
+}
+
+.box label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.box input:not([type="radio"]),
+
+.box textarea,
+
+.box select {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font: inherit;
+}
+
+.box fieldset {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-top: 12px;
+}
+
+.box legend {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0 4px;
+}
+
+.box .r {
+  font-weight: 400;
+}
+
+#sum {
+  margin-top: 14px;
+}
+
+.det {
+  text-align: center;
+}
+
+.big {
+  font-size: 5rem;
+}
+
+.warn {
+  background: #fff3cd;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}

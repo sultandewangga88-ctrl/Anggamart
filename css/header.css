@@ -1,0 +1,64 @@
+/* Header: logo, pencarian, menu */
+
+.top {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 12px 24px;
+  background: var(--navy);
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo b {
+  color: var(--yellow);
+}
+
+.top input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 0;
+  font: inherit;
+}
+
+.top nav {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.top nav button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.top nav button:hover {
+  background: #ffffff1f;
+}
+
+.top nav .cartbtn {
+  background: var(--yellow);
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.top nav span {
+  background: var(--red);
+  color: #fff;
+  border-radius: 99px;
+  padding: 0 7px;
+  font-size: 0.78rem;
+}

@@ -1,0 +1,20 @@
+/* Penyesuaian layar kecil dan preferensi gerak */
+
+@media (max-width: 720px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .top {
+    padding: 10px 14px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

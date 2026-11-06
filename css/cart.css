@@ -1,0 +1,86 @@
+/* Panel keranjang dan kupon */
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(400px, 100%);
+  background: #fff;
+  z-index: 40;
+  box-shadow: -8px 0 30px #0003;
+  transform: translateX(105%);
+  transition: transform 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer.open {
+  transform: none;
+}
+
+.dh {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.di {
+  flex: 1;
+  overflow: auto;
+  padding: 8px 16px;
+}
+
+.df {
+  padding: 16px;
+  border-top: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.ci {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.ci div:nth-child(2) {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.ci .add {
+  width: auto;
+  padding: 6px 12px;
+  margin: 0;
+}
+
+.em {
+  font-size: 2rem;
+}
+
+.cp {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.cp input {
+  flex: 1;
+  padding: 9px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font: inherit;
+  text-transform: uppercase;
+}
+
+.cp button {
+  background: var(--yellow);
+  color: var(--navy);
+  font-weight: 700;
+  padding: 0 14px;
+  border-radius: 8px;
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Anggamart - Belanja Online</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/catalog.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/orders.css" />
+    <link rel="stylesheet" href="css/toast.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" href="assets/favicon.svg" />
+  </head>
+  <body>
+    <header class="top">
+      <a class="logo" href="#">Angga<b>mart</b></a>
+      <input
+        id="q"
+        type="search"
+        placeholder="Cari produk, mis. susu, mie, sabun"
+        aria-label="Cari produk"
+      />
+      <nav>
+        <button data-act="wish">♥ Favorit <span id="wc">0</span></button>
+        <button data-act="orders">Pesanan</button>
+        <button data-act="acc" id="accBtn">Masuk</button>
+        <button data-act="cart" class="cartbtn">
+          Keranjang <span id="cc">0</span>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Belanja kebutuhan harian, diantar ke rumah.</h1>
+          <p>
+            Gratis ongkir mulai Rp100.000. Pakai kupon <b>HEMAT10</b> untuk
+            diskon 10%, <b>BARU25</b> untuk potongan Rp25.000, atau
+            <b>ONGKIRGRATIS</b>.
+          </p>
+        </div>
+        <div class="flash">
+          <h2>Promo hari ini</h2>
+          <div id="flash"></div>
+        </div>
+      </section>
+      <div id="cats" class="cats"></div>
+      <div class="bar">
+        <h2 id="title">Semua produk</h2>
+        <select id="sort" aria-label="Urutkan">
+          <option value="default">Urutkan</option>
+          <option value="lo">Harga terendah</option>
+          <option value="hi">Harga tertinggi</option>
+          <option value="disc">Diskon terbesar</option>
+          <option value="az">Nama A–Z</option>
+        </select>
+      </div>
+      <div id="grid" class="grid"></div>
+    </main>
+    <aside id="drawer" class="drawer" aria-label="Keranjang"></aside>
+    <div id="modal" class="modal" hidden></div>
+    <div id="toast" role="status"></div>
+    <footer>
+      © 2026 Anggamart · Proyek demo, data tersimpan di browser Anda.
+    </footer>
+    <script src="js/data/products.js"></script>
+    <script src="js/data/coupons.js"></script>
+    <script src="js/utils/helpers.js"></script>
+    <script src="js/utils/storage.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/ui/toast.js"></script>
+    <script src="js/ui/modal.js"></script>
+    <script src="js/ui/catalog.js"></script>
+    <script src="js/ui/refresh.js"></script>
+    <script src="js/ui/cart.js"></script>
+    <script src="js/features/product-detail.js"></script>
+    <script src="js/features/wishlist.js"></script>
+    <script src="js/features/account.js"></script>
+    <script src="js/features/checkout.js"></script>
+    <script src="js/features/orders.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

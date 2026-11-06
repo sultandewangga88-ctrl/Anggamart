@@ -1,0 +1,67 @@
+/* Banner utama dan promo hari ini */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 20px;
+  background: var(--blue);
+  color: #fff;
+  border-radius: 14px;
+  padding: 28px;
+  margin-bottom: 20px;
+  border-bottom: 6px solid var(--yellow);
+}
+
+.hero h1 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  opacity: 0.92;
+}
+
+.hero b {
+  color: var(--yellow);
+}
+
+.flash {
+  background: #ffffff18;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.flash h2 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.fl {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 6px 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.fl span {
+  font-size: 1.8rem;
+}
+
+.fl div {
+  flex: 1;
+}
+
+.fl s {
+  opacity: 0.7;
+}
+
+.fl em {
+  background: var(--red);
+  font-style: normal;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 2px 8px;
+}

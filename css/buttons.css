@@ -1,0 +1,75 @@
+/* Tombol: tambah, jumlah, favorit, tautan */
+
+.heart {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 1;
+  font-size: 1.2rem;
+  color: #c3cadb;
+}
+
+.heart.on {
+  color: var(--red);
+}
+
+.add,
+
+.primary {
+  background: var(--blue);
+  color: #fff;
+  border-radius: 8px;
+  padding: 9px;
+  font-weight: 700;
+  margin-top: auto;
+  width: 100%;
+}
+
+.add:hover,
+
+.primary:hover {
+  background: var(--navy);
+}
+
+.primary {
+  padding: 12px;
+  margin-top: 14px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  border: 2px solid var(--blue);
+  border-radius: 8px;
+}
+
+.step button {
+  width: 36px;
+  height: 34px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.step span {
+  font-weight: 700;
+}
+
+.step.sm {
+  margin: 0;
+  width: 100px;
+}
+
+.link {
+  display: block;
+  margin: 10px auto 0;
+  color: var(--blue);
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.link.r {
+  color: var(--red);
+}
