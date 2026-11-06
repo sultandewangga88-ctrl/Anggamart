@@ -42,3 +42,7 @@ checkout (kurir/ambil di toko, metode bayar), riwayat pesanan dengan status otom
 pesanan, beli lagi, dan cek stok.
 
 Data (keranjang, akun, pesanan) disimpan di localStorage; ini proyek demo tanpa server.
+
+## Akun demo
+- Email: demo@anggamart.com
+- Kata sandi: demo123
